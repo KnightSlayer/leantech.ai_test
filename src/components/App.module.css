@@ -1,0 +1,34 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  height: 100px;
+  background-color: yellow;
+  transition: all ease-in-out 0.5s;
+}
+/* планшет */
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: #fcf5ba;
+  }
+}
+
+.footer {
+  height: 100px;
+  background-color: green;
+  transition: all ease-in-out 0.5s;
+}
+/* мобильнйы */
+@media screen and (max-width: 320px) {
+  .footer {
+    background-color: #ffbff6;
+  }
+}
+
+/* тут :global не нужен, так как это селектор по тегу
+и тут ничего не хешируется. просто для демонстрации сделал */
+:global body {
+  margin: 0;
+}

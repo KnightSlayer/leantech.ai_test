@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+}
+
+.navItem {
+  cursor: pointer;
+  padding: 3px 7px;
+}
+.navItem + .navItem {
+  margin-left: 1em;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
